@@ -1,0 +1,42 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row m-5">
+        <div class="col-md-12 text-center">
+          <h1 class="">Generate your Lorem jibberjabber</h1>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <form method="POST">
+            Number of paragraphs <input type="number" name="quantity" min="1" max="10"><br />
+            <input type="radio" name="size" value="short"> Short text<br />
+            <input type="radio" name="size" value="medium"> Medium text<br />
+            <input type="radio" name="size" value="long"> Long text<br />
+            <input type="radio" name="size" value="verylong"> Very Long text<br />
+            <input type="checkbox" name="link" value="link">Add links<br />
+            <input type="checkbox" name="ul" value="ul">Add unordered lists<br />
+            <input type="checkbox" name="ol" value="ol">Add numbered lists<br />
+            <input type="checkbox" name="bq" value="bq">Add blockquotes<br />
+            <input type="checkbox" name="dl" value="dl">Add description links<br />
+            <input type="checkbox" name="code" value="code">Add code<br />
+            <input type="checkbox" name="headers" value="headers">Add headers<br />
+            <input type="checkbox" name="allcaps" value="allcaps">Add allcaps<br />
+            <input type="checkbox" name="prude" value="prude">Prude version<br />
+            <button>Generate</button>
+          </form>
+        </div>
+        <div class="loremStuff col-md-9">
+          {{loremStuff}}
+        </div>
+      </div>
+    </div>
+
+ </body>
+</html>
+</DOCTYPE>
